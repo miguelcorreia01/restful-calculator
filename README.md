@@ -79,7 +79,7 @@ docker-compose down
 ## Testing the API
 
 You can test the API through:
-- **Direct browser access**: Click or copy the URLs provided for each operation
+- **Direct browser access**: Copy the URLs provided for each operation
 - **Command line**: Use the curl commands provided below
 
 Make sure all services are running via Docker Compose before testing.
