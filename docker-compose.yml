@@ -21,7 +21,9 @@ services:
       KAFKA_AUTO_CREATE_TOPICS_ENABLE: true
 
   calculator:
-    build: ./calculator
+    build:
+      context: .
+      dockerfile: calculator/Dockerfile
     depends_on:
       - kafka
     ports:
@@ -32,7 +34,9 @@ services:
       - ./logs:/app/logs
 
   rest:
-    build: ./rest
+    build:
+      context: .
+      dockerfile: rest/Dockerfile
     depends_on:
       - kafka
     ports:
